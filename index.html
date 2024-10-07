@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Mon Portfolio ! Truc de ouf !</h1>
+    <div class="container">
+        <h1>Mon Portfolio</h1>
+        <form id="projectForm">
+            <input type="text" id="projectTitle" placeholder="Titre du projet" required>
+            <input type="text" id="projectImage" placeholder="URL de l'image" required>
+            <textarea id="projectDescription" placeholder="Description du projet" required></textarea>
+            <button type="submit">Ajouter Projet</button>
+        </form>
+        <div id="projectsContainer">
+            <!-- Les projets seront ajoutés ici -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
