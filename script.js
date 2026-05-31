@@ -16,6 +16,7 @@ const projects = [
         image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
         description: 'A modular portfolio structure that can be updated quickly for new work, bios, and contact links.',
         tags: ['Template', 'GitHub Pages'],
+        link: 'projects/project1.html',
     },
 ];
 
@@ -26,14 +27,17 @@ projectsContainer.innerHTML = projects
         (project) => `
             <article class="project-card">
                 <img src="${project.image}" alt="${project.title}">
+                <div class="project-meta">
+                    ${project.tags.map((tag) => `<span>${tag}</span>`).join('')}
+                </div>
                 <div>
-                    <div class="project-meta">
-                        ${project.tags.map((tag) => `<span>${tag}</span>`).join('')}
-                    </div>
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                 </div>
+                <a class="button button-primary" href="${project.link}">View Project</a>
             </article>
         `,
     )
     .join('');
+
+    
