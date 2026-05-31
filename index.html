@@ -1,23 +1,122 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <meta name="description" content="A polished portfolio template for showcasing your work, skills, and contact details.">
+    <title>Portfolio Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Mon Portfolio</h1>
-        <form id="projectForm">
-            <input type="text" id="projectTitle" placeholder="Titre du projet" required>
-            <input type="text" id="projectImage" placeholder="URL de l'image" required>
-            <textarea id="projectDescription" placeholder="Description du projet" required></textarea>
-            <button type="submit">Ajouter Projet</button>
-        </form>
-        <div id="projectsContainer">
-            <!-- Les projets seront ajoutés ici -->
-        </div>
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar" aria-label="Primary">
+                <a class="brand" href="#home">Avery Cole</a>
+                <div class="topbar-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <div class="hero-grid" id="home">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio template</p>
+                    <h1>Designing thoughtful digital experiences that feel sharp, useful, and memorable.</h1>
+                    <p class="lede">
+                        A clean portfolio starting point for developers and creatives who want to present their work,
+                        skills, and contact details with confidence.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View projects</a>
+                        <a class="button button-secondary" href="#contact">Get in touch</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Highlights">
+                        <article>
+                            <strong>12+</strong>
+                            <span>Projects shipped</span>
+                        </article>
+                        <article>
+                            <strong>5</strong>
+                            <span>Years of practice</span>
+                        </article>
+                        <article>
+                            <strong>3</strong>
+                            <span>Core specialties</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-card">
+                    <p class="card-label">Currently focused on</p>
+                    <h2>Interface design, frontend systems, and clean product storytelling.</h2>
+                    <p>
+                        Swap the placeholder details for your own summary, then edit the project data in `script.js` to
+                        match your portfolio.
+                    </p>
+                    <ul class="focus-list">
+                        <li>Frontend development</li>
+                        <li>Brand and UI design</li>
+                        <li>Fast static deployments</li>
+                    </ul>
+                </aside>
+            </div>
+        </header>
+
+        <main>
+            <section class="section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Built as a flexible template you can make your own.</h2>
+                </div>
+                <div class="about-grid">
+                    <p>
+                        Use this layout to introduce your background, what you care about, and the kind of problems you
+                        like solving. It is structured so you can keep it concise or expand it into a fuller narrative.
+                    </p>
+                    <p>
+                        The content, visual language, and project cards are all easy to edit. Replace the placeholder name,
+                        links, and project descriptions, then deploy automatically with GitHub Actions.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Featured projects.</h2>
+                </div>
+                <div id="projectsContainer" class="projects-grid" aria-live="polite"></div>
+            </section>
+
+            <section class="section split-section" id="skills">
+                <div>
+                    <p class="eyebrow">Skills</p>
+                    <h2>Tools and strengths.</h2>
+                </div>
+                <div class="skill-tags" aria-label="Skills list">
+                    <span>HTML & CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive UI</span>
+                    <span>Accessibility</span>
+                    <span>GitHub Actions</span>
+                    <span>Design systems</span>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Interested in working together?</h2>
+                    <p>Use this area for your email, social links, or a short call to action for recruiters and clients.</p>
+                </div>
+                <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
