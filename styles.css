@@ -332,6 +332,7 @@ main {
 
 .project-meta span {
     padding: 8px 12px;
+    height: min-content;
     border-radius: 999px;
     background: rgba(19, 32, 43, 0.06);
     font-size: 0.88rem;

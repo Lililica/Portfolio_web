@@ -1,28 +1,6 @@
-const projects = [
-    {
-        title: 'Creative Dashboard',
-        image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=80',
-        description: 'A polished analytics interface with a strong visual hierarchy and reusable card system.',
-        tags: ['UI design', 'Frontend'],
-    },
-    {
-        title: 'Brand Landing Page',
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
-        description: 'A responsive landing page template built to highlight messaging, testimonials, and conversion points.',
-        tags: ['Marketing site', 'Responsive'],
-    },
-    {
-        title: 'Portfolio System',
-        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-        description: 'A modular portfolio structure that can be updated quickly for new work, bios, and contact links.',
-        tags: ['Template', 'GitHub Pages'],
-        link: 'projects/project1.html',
-    },
-];
-
-const projectsContainer = document.getElementById('projectsContainer');
-
-projectsContainer.innerHTML = projects
+function mapProjectsToHTML(containerId, projects) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = projects
     .map(
         (project) => `
             <article class="project-card">
@@ -39,5 +17,87 @@ projectsContainer.innerHTML = projects
         `,
     )
     .join('');
+}
+
+
+let projects = [
+    {
+        title: 'Cells Center',
+        image: 'data/CellCenter2.png',
+        description: 'Développement d\'outils de recherches sur OpenGL en C++. Étude autour des triangles de Delaunay et recherche d\'optimisation d\'énergie CVT. Relié au laboratoire de Vision par Ordinateur et Graphique.',
+        tags: ['C++', 'Recherche', 'OpenGL'],
+    },
+    {
+        title: 'Ingénieur Logiciel C++ (UX & Interactions 3D)',
+        image: 'data/DS.png',
+        description: 'Implémenter un nouveau système de configuration de shortcut sur la 3DExperience. Intégration d’une UI complète, compréhension d’une codebase complexe, prise en compte des enjeux, organisation du projet.',
+        tags: ['C++', 'JS', 'UI design', 'XML'],
+    },
+];
+
+mapProjectsToHTML('projPro', projects);
+
+
+
+projects = [
+    {
+        title: 'It’s Time !',
+        image: 'data/time.png',
+        description: 'GameJam : Créer un jeux vidéo en 48h.',
+        tags: ['C++', 'Raylib', 'GameJam'],
+    },
+    {
+        title: 'Photographie',
+        image: 'data/photos/photo1.jpg',
+        description: 'Se poser la question de comment extraire de la beauté d’une image.',
+        tags: ['Adobe Lightroom', 'Photo', 'Composition', 'Couleur'],
+    },
+];
 
     
+mapProjectsToHTML('projPerso', projects);
+
+
+projects = [
+    {
+        title: 'Chess Game',
+        image: 'data/chess2.png',
+        description: 'Projet  : Créer un jeu d’échec en C++ avancé et en OpenGL + ImGui.',
+        tags: ['Synthése d’image', 'C++', 'OpenGL', 'ImGui', 'Maths'],
+    },
+    {
+        title: 'Equations en image',
+        image: 'data/EqEnImage.png',
+        description: 'Mettre en image/interpréter des équations scientifiques.',
+        tags: ['Synthèse d’image', 'C++', 'InDesign', 'Interview', 'Maths'],
+    },
+    {
+        title: 'VelocImac',
+        image: 'data/Velocimac.png',
+        description: 'Suivre un modèle d’animation et modéliser/animer/réaliser une animation sur Blender',
+        tags: ['Blender', '3D', 'Animation'],
+    },
+    {
+        title: 'CineDATA',
+        image: 'data/Cinedata.png',
+        description: '',
+        tags: ['Web', 'JS', 'UI', 'API'],
+        link : 'https://github.com/ShadowsHood/web-imac-1-projet-api'
+    },
+    {
+        title: 'Tower Defence',
+        image: 'data/towerDef.png',
+        description: '',
+        tags: ['OPENGL', 'C++', 'Synthèse d’image', 'GLSL'],
+        link : 'https://github.com/Lililica/TowerDefenceIMAC'
+    },
+    {
+        title: 'Conic filtring',
+        image: 'data/conicFilter.png',
+        description: '',
+        tags: ['Maths', 'C++', 'Recherche'],
+        link : 'https://github.com/Lililica/Conic_filtring'
+    },
+];
+
+mapProjectsToHTML('projSco', projects);
