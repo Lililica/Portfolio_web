@@ -170,10 +170,12 @@ h2 {
 }
 
 .button {
+    bottom: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 48px;
+    max-height: 48px;
     padding: 0 20px;
     border-radius: 999px;
     border: 1px solid transparent;
@@ -290,11 +292,15 @@ main {
 }
 
 .project-card {
+    position: relative;
     overflow: hidden;
     display: grid;
+    grid-template-rows: auto auto auto 48px;
     gap: 18px;
     padding: 16px;
 }
+
+
 
 .project-card img {
     width: 100%;
