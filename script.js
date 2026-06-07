@@ -22,11 +22,18 @@ function mapProjectsToHTML(containerId, projects) {
 
 let projects = [
     {
-        title: 'Machine Learning - Classification d\'images',
-        image: 'projects/p2/data/cover.png',
-        description: 'Ce projet vise à développer un modèle d’intelligence artificielle capable de reconnaître automatiquement le "type" de carte à partir d’une image.',
-        tags: ['Python', 'PyTorch', 'Machine Learning', 'Data Science'],
-        link : 'projects/p2/machineLearning.html',
+        title: 'Raymarcher/Raytracer WebGL',
+        image: 'data/Raymarcher.png',
+        description: 'Ce projet explore deux approches différentes de rendu en temps réel: un raytracer et un raymarcher.',
+        tags: ['Synthése d’image', 'C++', 'OpenGL', 'ImGui', 'WebGL', 'JS', 'Raytracer', 'Raymarcher'],
+        link : 'https://lililica.github.io/ProjetPersoIMAC2026/index.html',
+    },
+    {
+        title: 'Funcky Night Party - Projet pré-professionnel',
+        image: 'data/funky.png',
+        description: 'Lors d\'un projet pré-proessionnel autour d\'Unity, j\'ai pu participer à la création d`\'un jeu typé "party game" en équipe de 8 !',
+        tags: ['Unity', 'C#', 'Blender', 'Organisation'],
+        link : 'https://portfoliolucas.my.canva.site/prepro2026funky-night-party',
     },
     {
         title: 'Ingénieur Logiciel C++ (UX & Interactions 3D)',
@@ -36,18 +43,18 @@ let projects = [
         private : true,
     },
     {
-        title: 'It’s Time !',
-        image: 'data/time.png',
-        description: 'GameJam 2025 : Créer un jeux vidéo en 48h sur le thème : "Profondeur".',
-        tags: ['C++', 'Raylib', 'GameJam'],
-        // link : 'https://github.com/Lililica/GameJame2024',
-    },
+        title: 'Symphony',
+        image: 'data/Symphony.png',
+        description: 'GameJam 2026: Créer un jeux vidéo en 48h sur le thème : "Emmeler',
+        tags: ['C#', 'Unity', 'GameJam', 'Blender'],
+        link : 'https://lililica.itch.io/symphony',
+    },      
     {
-        title: 'Raymarcher/Raytracer WebGL',
-        image: 'data/Raymarcher.png',
-        description: 'Ce projet explore deux approches différentes de rendu en temps réel: un raytracer et un raymarcher.',
-        tags: ['Synthése d’image', 'C++', 'OpenGL', 'ImGui', 'WebGL', 'JS', 'Raytracer', 'Raymarcher'],
-        link : 'https://lililica.github.io/ProjetPersoIMAC2026/index.html',
+        title: 'Machine Learning - Classification d\'images',
+        image: 'projects/p2/data/cover.png',
+        description: 'Ce projet vise à développer un modèle d’intelligence artificielle capable de reconnaître automatiquement le "type" de carte à partir d’une image.',
+        tags: ['Python', 'PyTorch', 'Machine Learning', 'Data Science'],
+        link : 'projects/p2/machineLearning.html',
     },
     {
         title: 'Cells Center',
@@ -56,7 +63,13 @@ let projects = [
         tags: ['C++', 'Recherche', 'OpenGL'],
         link : 'https://github.com/Lililica/CellsCenter',
     },
-
+    {
+        title: 'It’s Time !',
+        image: 'data/time.png',
+        description: 'GameJam 2025 : Créer un jeux vidéo en 48h sur le thème : "Profondeur".',
+        tags: ['C++', 'Raylib', 'GameJam'],
+        link : 'https://github.com/Lililica/GameJame2024',
+    },
     {
         title: 'Chess Game',
         image: 'data/chess2.png',

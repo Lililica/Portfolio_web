@@ -212,6 +212,11 @@ h2 {
     gap: 14px;
 }
 
+.email {
+    color: var(--text);
+    font-weight: 1000;
+}
+
 .hero-stats article,
 .project-card,
 .hero-card,
