@@ -19,6 +19,30 @@ function mapProjectsToHTML(containerId, projects) {
     .join('');
 }
 
+function mapCreatorsToHTML(containerId, creators) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = creators
+        .map(
+            (creator) => `
+                <article class="creator-card">
+                    <div class="creator-card-top">
+                        <img src="${creator.image || 'data/photos/photo1.jpg'}" alt="${creator.channelName}">
+                        <div class="creator-card-body">
+                            <div>
+                                <p class="creator-label">Chaîne YouTube</p>
+                                <h3>${creator.channelName}</h3>
+                            </div>
+                            <div class="creator-links">
+                                ${creator.youtubeUrl ? `<a class="button button-primary button-small" href="${creator.youtubeUrl}" target="_blank" rel="noreferrer">YouTube</a>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `,
+        )
+        .join('');
+}
+
 
 let projects = [
     {
@@ -82,5 +106,40 @@ let projects = [
 ];
 
 mapProjectsToHTML('proj', projects);
+
+let creators = [
+    {
+        channelName: 'Acerola',
+        image: 'data/creatorPP/Acerola.png',
+        youtubeUrl: 'https://www.youtube.com/@Acerola_t',
+    },
+    {
+        channelName: 'Code Bullet',
+        image: 'data/creatorPP/bulletCode.png',
+        youtubeUrl: 'https://www.youtube.com/@CodeBullet',
+    },
+    {
+        channelName: 'Sebastian Lague',
+        image: 'data/creatorPP/sebastien.png',
+        youtubeUrl: 'https://www.youtube.com/@SebastianLague',
+    },
+    {
+        channelName: 'Juniper Dev',
+        image: 'data/creatorPP/Juniper.png',
+        youtubeUrl: 'https://www.youtube.com/@JuniperDev',
+    },
+    {
+        channelName: 'The Cherno',
+        image: 'data/creatorPP/cherno.png',
+        youtubeUrl: 'https://www.youtube.com/@TheCherno',
+    },
+    {
+        channelName: 'Micode',
+        image: 'data/creatorPP/Micode.png',
+        youtubeUrl: 'https://www.youtube.com/@Micode',
+    }
+];
+
+mapCreatorsToHTML('creators-list', creators);
 
 

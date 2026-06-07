@@ -298,6 +298,12 @@ main {
     gap: 18px;
 }
 
+.creators-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
 .project-card {
     position: relative;
     overflow: hidden;
@@ -326,6 +332,70 @@ main {
     margin: 0;
     color: var(--muted);
     line-height: 1.7;
+}
+
+.creator-card {
+    overflow: hidden;
+    padding: 16px;
+    background: var(--surface-strong);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(19, 32, 43, 0.08);
+}
+
+.creator-card-top {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 16px;
+    align-items: center;
+}
+
+.creator-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 18px;
+    background: #ece2d6;
+}
+
+.creator-card-body {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+}
+
+.creator-label {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.creator-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.creator-subtitle {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.creator-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-small {
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0 14px;
+    font-size: 0.9rem;
 }
 
 .idImage {
@@ -374,6 +444,7 @@ main {
 @media (max-width: 960px) {
     .hero-grid,
     .projects-grid,
+    .creators-grid,
     .about-grid,
     .contact-section {
         grid-template-columns: 1fr;
@@ -402,6 +473,14 @@ main {
     .hero-copy,
     .hero-card {
         padding: 20px;
+    }
+
+    .creator-card-top {
+        grid-template-columns: 1fr;
+    }
+
+    .creator-card img {
+        aspect-ratio: 16 / 9;
     }
 
     .topbar {
