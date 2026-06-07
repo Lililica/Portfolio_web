@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A polished portfolio template for showcasing your work, skills, and contact details.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Portfolio Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css?v=1.0">
+	<style>
+		.hero-grid {
+			display: grid;
+			grid-template-columns: minmax(300px, 1fr) minmax(290px, 1fr);
+			gap: 24px;
+			align-items: stretch;
+		}
+
+		.idImage {
+			object-fit: cover;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar" aria-label="Primary">
+                <p class="Home" href="#home">Machine Learning - Classification d'images</p>
+                <div class="topbar-links">
+                    <a href="#Description">Description</a>
+                    <a href="#Rapport">Rapport</a>
+                </div>
+            </nav>
+
+            <div class="hero-grid" id="Description">
+                <aside class="hero-card">
+
+                    <img src="data/dataExemple.png" alt="Lucas TERRASSON" class="idImage">
+
+                </aside>
+
+
+                <div class="hero-copy">
+                    <p class="eyebrow">Avril 2026</p>
+                    <h2>Machine Learning - Classification d'images</h2>
+                    <p class="lede">
+                        Ce projet vise à développer un modèle d’intelligence artificielle capable de reconnaître automatiquement le "type"
+                        de carte à partir d’une image.
+                        Étant joueur régulié du jeu de cartes "Yu-Gi-Oh !", et connaissant les outils me permettant d’extraire des données
+                        exploitables, je me suis lancé dans la création d’une base de données d’images de cartes. Mais comment différencier
+                        les types de cartes ?
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#Rapport">Voir le rapport</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Highlights" >
+                        <article>
+                            <strong>Projet Solo</strong>
+                        </article>
+                        <article>
+                            <strong>20h+</strong>
+                            <span>Entrainement des modèles</span>
+                        </article>
+                        <article>
+                            <strong>~10h</strong>
+                            <span>Construction de la base de données</span>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+            <section class="section" id="Rapport">
+                <div class="section-heading">
+                    <p class="eyebrow">Rapport</p>
+                    <h2>Rapport de projet</h2>
+                </div>
+                <embed src="data/LucasTERRASSON.pdf" type="" width="100%" height="1000px">
+
+            </section>
+
+
+            <section class="section" id="BackHome">
+                <div class="section-heading">
+                    <p class="eyebrow">Retour</p>
+                    <h2>Retour à la page des projets ou portfolio</h2>
+                </div>
+                <a class="button button-primary" href="../../projects.html">Voir tous mes autres projets</a>
+                <a class="button button-primary" href="../../index.html">Voir mon portfolio</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -22,11 +22,11 @@ function mapProjectsToHTML(containerId, projects) {
 
 let projects = [
     {
-        title: 'Cells Center',
-        image: 'data/CellCenter2.png',
-        description: 'Développement d\'outils de recherches sur OpenGL en C++. Étude autour des triangles de Delaunay et recherche d\'optimisation d\'énergie CVT. Relié au laboratoire de Vision par Ordinateur et Graphique.',
-        tags: ['C++', 'Recherche', 'OpenGL'],
-        link : 'https://github.com/Lililica/CellsCenter',
+        title: 'Machine Learning - Classification d\'images',
+        image: 'projects/p2/data/cover.png',
+        description: 'Ce projet vise à développer un modèle d’intelligence artificielle capable de reconnaître automatiquement le "type" de carte à partir d’une image.',
+        tags: ['Python', 'PyTorch', 'Machine Learning', 'Data Science'],
+        link : 'projects/p2/machineLearning.html',
     },
     {
         title: 'Ingénieur Logiciel C++ (UX & Interactions 3D)',
@@ -35,40 +35,13 @@ let projects = [
         tags: ['C++', 'JS', 'UI design', 'XML'],
         private : true,
     },
-];
-
-mapProjectsToHTML('projPro', projects);
-
-
-
-projects = [
-    {
-        title: 'Symphony',
-        image: 'data/Symphony.png',
-        description: 'GameJam 2026: Créer un jeux vidéo en 48h sur le thème : "Emmeler',
-        tags: ['C#', 'Unity', 'GameJam', 'Blender'],
-        link : 'projects/p1/project1.html',
-    },
     {
         title: 'It’s Time !',
         image: 'data/time.png',
         description: 'GameJam 2025 : Créer un jeux vidéo en 48h sur le thème : "Profondeur".',
         tags: ['C++', 'Raylib', 'GameJam'],
-        link : 'https://github.com/Lililica/GameJame2024',
+        // link : 'https://github.com/Lililica/GameJame2024',
     },
-    {
-        title: 'Photographie',
-        image: 'data/photos/photo1.jpg',
-        description: 'Se poser la question de comment extraire de la beauté d’une image.',
-        tags: ['Adobe Lightroom', 'Photo', 'Composition', 'Couleur'],
-    },
-];
-
-    
-mapProjectsToHTML('projPerso', projects);
-
-
-projects = [
     {
         title: 'Raymarcher/Raytracer WebGL',
         image: 'data/Raymarcher.png',
@@ -77,45 +50,24 @@ projects = [
         link : 'https://lililica.github.io/ProjetPersoIMAC2026/index.html',
     },
     {
+        title: 'Cells Center',
+        image: 'data/CellCenter2.png',
+        description: 'Développement d\'outils de recherches sur OpenGL en C++. Étude autour des triangles de Delaunay et recherche d\'optimisation d\'énergie CVT. Relié au laboratoire de Vision par Ordinateur et Graphique.',
+        tags: ['C++', 'Recherche', 'OpenGL'],
+        link : 'https://github.com/Lililica/CellsCenter',
+    },
+
+    {
         title: 'Chess Game',
         image: 'data/chess2.png',
-        description: 'Projet  : Créer un jeu d’échec en C++ avancé et en OpenGL + ImGui.',
+        description: 'Projet  : Créer un jeu d’échec en C++ avancé et en OpenGL + ImGui. Apprentissage de la pipeline de rendu.',
         tags: ['Synthése d’image', 'C++', 'OpenGL', 'ImGui', 'Maths'],
         link : 'https://github.com/Lililica/EchecProj-2025',
     },
-    {
-        title: 'Equations en image',
-        image: 'data/EqEnImage.png',
-        description: 'Mettre en image/interpréter des équations scientifiques.',
-        tags: ['Synthèse d’image', 'C++', 'InDesign', 'Interview', 'Maths'],
-    },
-    {
-        title: 'VelocImac',
-        image: 'data/Velocimac.png',
-        description: 'Suivre un modèle d’animation et modéliser/animer/réaliser une animation sur Blender',
-        tags: ['Blender', '3D', 'Animation'],
-    },
-    {
-        title: 'CineDATA',
-        image: 'data/Cinedata.png',
-        description: '',
-        tags: ['Web', 'JS', 'UI', 'API'],
-        link : 'https://github.com/ShadowsHood/web-imac-1-projet-api'
-    },
-    {
-        title: 'Tower Defence',
-        image: 'data/towerDef.png',
-        description: '',
-        tags: ['OPENGL', 'C++', 'Synthèse d’image', 'GLSL'],
-        link : 'https://github.com/Lililica/TowerDefenceIMAC'
-    },
-    {
-        title: 'Conic filtring',
-        image: 'data/conicFilter.png',
-        description: '',
-        tags: ['Maths', 'C++', 'Recherche'],
-        link : 'https://github.com/Lililica/Conic_filtring'
-    },
+
+
 ];
 
-mapProjectsToHTML('projSco', projects);
+mapProjectsToHTML('proj', projects);
+
+
