@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A polished portfolio template for showcasing your work, skills, and contact details.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Equations en image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css?v=1.0">
+	<style>
+		.hero-grid {
+			display: grid;
+			grid-template-columns: minmax(300px, 1fr) minmax(290px, 1fr);
+			gap: 24px;
+			align-items: stretch;
+		}
+
+		.idImage {
+			object-fit: cover;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar" aria-label="Primary">
+                <p class="Home" href="#home">Equations en image</p>
+                <div class="topbar-links">
+                    <a href="#Description">Description</a>
+                    <a href="#Rapport">Rapport</a>
+                </div>
+            </nav>
+
+            <div class="hero-grid" id="Description">
+                <aside class="hero-card">
+
+                    <img src="data/affiche.jpg" alt="Lucas TERRASSON" class="idImage">
+
+                </aside>
+
+
+                <div class="hero-copy">
+                    <p class="eyebrow">Mai 2025</p>
+                    <h2>Equations en image</h2>
+                    <p class="lede">
+Quand le design graphique rencontre les mathématiques, vous obtenez Équations en Image - Série n°2
+Réalisée par quatre étudiants de la filière IMAC à l’ESIEE Paris, sous la tutelle de Vincent Nozick et Gaëtan Robillard, cette exposition propose huit créations graphiques originales explorant les liens entre art et science.
+Dans la continuité de la première série présentée en 2023, cette nouvelle édition s’appuie sur les témoignages des huit chercheurs en informatique et mathématiques du LIGM et de l’ESIEE Paris.
+
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#Rapport">Voir le rapport</a>
+                        <a class="button button-primary" href="https://www.youtube.com/watch?v=CKt_uyoSciQ">Vidéo de présentation</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Highlights" >
+                        <article>
+                            <strong>Projet d'équipe</strong>
+                        </article>
+                        <article>
+                            <strong>8</strong>
+                            <span>Tableaux Exposés</span>
+                        </article>
+                        <article>
+                            <strong>+10h</strong>
+                            <span>D'interviews avec des chercheurs</span>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+            <section class="section" id="Rapport">
+                <div class="section-heading">
+                    <p class="eyebrow">Rapport</p>
+                    <h2>Rapport de projet</h2>
+                </div>
+                <embed src="data/catalogue.pdf" type="" width="100%" height="1000px">
+
+            </section>
+
+
+            <section class="section" id="BackHome">
+                <div class="section-heading">
+                    <p class="eyebrow">Retour</p>
+                    <h2>Retour à la page des projets ou portfolio</h2>
+                </div>
+                <a class="button button-primary" href="../../projects.html">Voir tous mes autres projets</a>
+                <a class="button button-primary" href="../../index.html">Voir mon portfolio</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

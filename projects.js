@@ -12,7 +12,7 @@ function mapProjectsToHTML(containerId, projects) {
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                 </div>
-                ${project.link ? `<a class="button button-primary" href="${project.link}">View Project</a>` : `<a class="button button-secondary">Not Available</a>`}
+                ${project.link ? `<a class="button button-primary" href="${project.link}">Voir le projet</a>` : `<a class="button button-secondary">Non disponible</a>`}
             </article>
         `,
     )
@@ -47,8 +47,8 @@ projects = [
         image: 'data/Symphony.png',
         description: 'GameJam 2026: Créer un jeux vidéo en 48h sur le thème : "Emmeler',
         tags: ['C#', 'Unity', 'GameJam', 'Blender'],
-        link : 'projects/p1/project1.html',
-    },
+        link : 'https://lililica.itch.io/symphony',
+    }, 
     {
         title: 'It’s Time !',
         image: 'data/time.png',
@@ -77,6 +77,13 @@ projects = [
         link : 'https://lililica.github.io/ProjetPersoIMAC2026/index.html',
     },
     {
+        title: 'Funcky Night Party - Projet pré-professionnel',
+        image: 'data/funky.png',
+        description: 'Lors d\'un projet pré-proessionnel autour d\'Unity, j\'ai pu participer à la création d`\'un jeu typé "party game" en équipe de 8 !',
+        tags: ['Unity', 'C#', 'Blender', 'Organisation'],
+        link : 'https://portfoliolucas.my.canva.site/prepro2026funky-night-party',
+    },
+    {
         title: 'Chess Game',
         image: 'data/chess2.png',
         description: 'Projet  : Créer un jeu d’échec en C++ avancé et en OpenGL + ImGui.',
@@ -84,23 +91,25 @@ projects = [
         link : 'https://github.com/Lililica/EchecProj-2025',
     },
     {
+        title: 'Machine Learning - Classification d\'images',
+        image: 'projects/p2/data/cover.png',
+        description: 'Ce projet vise à développer un modèle d’intelligence artificielle capable de reconnaître automatiquement le "type" de carte à partir d’une image.',
+        tags: ['Python', 'PyTorch', 'Machine Learning', 'Data Science'],
+        link : 'projects/p2/machineLearning.html',
+    },
+    {
         title: 'Equations en image',
         image: 'data/EqEnImage.png',
         description: 'Mettre en image/interpréter des équations scientifiques.',
         tags: ['Synthèse d’image', 'C++', 'InDesign', 'Interview', 'Maths'],
+        link : 'projects/p1/equation.html',
     },
     {
         title: 'VelocImac',
         image: 'data/Velocimac.png',
         description: 'Suivre un modèle d’animation et modéliser/animer/réaliser une animation sur Blender',
         tags: ['Blender', '3D', 'Animation'],
-    },
-    {
-        title: 'CineDATA',
-        image: 'data/Cinedata.png',
-        description: '',
-        tags: ['Web', 'JS', 'UI', 'API'],
-        link : 'https://github.com/ShadowsHood/web-imac-1-projet-api'
+        link : 'https://www.youtube.com/watch?v=v3OVuv5Ea4Y',
     },
     {
         title: 'Tower Defence',
@@ -115,6 +124,13 @@ projects = [
         description: '',
         tags: ['Maths', 'C++', 'Recherche'],
         link : 'https://github.com/Lililica/Conic_filtring'
+    },
+    {
+        title: 'Reset - IMAC 2 2024',
+        image: 'data/reset.png',
+        description: '',
+        tags: ['Maths', 'C++', 'Recherche'],
+        link : 'https://www.youtube.com/watch?v=vCh1vW_j3Gk'
     },
 ];
 

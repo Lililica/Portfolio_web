@@ -12,7 +12,7 @@ function mapProjectsToHTML(containerId, projects) {
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                 </div>
-                ${project.link ? `<a class="button button-primary" href="${project.link}">View Project</a>` : `<a class="button button-secondary">Not Available</a>`}
+                ${project.link ? `<a class="button button-primary" href="${project.link}">Voir le projet</a>` : `<a class="button button-secondary">Non disponible</a>`}
             </article>
         `,
     )
@@ -95,14 +95,19 @@ let projects = [
         link : 'https://github.com/Lililica/GameJame2024',
     },
     {
+        title: 'Equations en image',
+        image: 'data/EqEnImage.png',
+        description: 'Mettre en image/interpréter des équations scientifiques.',
+        tags: ['Synthèse d’image', 'C++', 'InDesign', 'Interview', 'Maths'],
+        link : 'projects/p1/equation.html',
+    },
+    {
         title: 'Chess Game',
         image: 'data/chess2.png',
         description: 'Projet  : Créer un jeu d’échec en C++ avancé et en OpenGL + ImGui. Apprentissage de la pipeline de rendu.',
         tags: ['Synthése d’image', 'C++', 'OpenGL', 'ImGui', 'Maths'],
         link : 'https://github.com/Lililica/EchecProj-2025',
     },
-
-
 ];
 
 mapProjectsToHTML('proj', projects);
