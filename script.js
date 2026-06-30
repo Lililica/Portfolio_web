@@ -52,7 +52,7 @@ projects = [
     {
         title: 'It’s Time !',
         image: 'data/time.png',
-        description: 'GameJam 2025 : Créer un jeux vidéo en 48h sur le thème : "Profondeur".',
+        description: 'GameJam 2024 : Créer un jeux vidéo en 48h sur le thème : "Profondeur".',
         tags: ['C++', 'Raylib', 'GameJam'],
         link : 'https://github.com/Lililica/GameJame2024',
     },
@@ -96,14 +96,7 @@ projects = [
         tags: ['Blender', '3D', 'Animation'],
     },
     {
-        title: 'CineDATA',
-        image: 'data/Cinedata.png',
-        description: '',
-        tags: ['Web', 'JS', 'UI', 'API'],
-        link : 'https://github.com/ShadowsHood/web-imac-1-projet-api'
-    },
-    {
-        title: 'Tower Defence',
+        title: 'Tower Defense',
         image: 'data/towerDef.png',
         description: '',
         tags: ['OPENGL', 'C++', 'Synthèse d’image', 'GLSL'],
